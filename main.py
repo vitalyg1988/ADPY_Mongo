@@ -49,13 +49,13 @@ if __name__ == '__main__':
         data = read_data(data_file_path)
         data_coll.insert_many(data)
 
-    print('By NAME================================')
+    print('By NAME')
     by_name_data = find_by_name('ри', data_coll)
 
     for doc in by_name_data:
         print(doc)
 
-    print('CHEAPEST================================')
+    print('CHEAPEST')
 
     cheapest = find_cheapest(data_coll)
 
